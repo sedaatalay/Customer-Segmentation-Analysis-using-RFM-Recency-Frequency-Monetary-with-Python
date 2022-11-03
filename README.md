@@ -54,6 +54,7 @@ It also helps managers run an effective promotional campaign for personalized se
 Introduction of tables and columns in the database
   
 🔸	Tables:
+  
 The table that we use is Migros Marketing Customer Data taken from Migros
 
 🔸Columns:
@@ -61,18 +62,28 @@ The table that we use is Migros Marketing Customer Data taken from Migros
 ¬	Customer No: Unique custom value assigned to each customer
   
 ¬	Age: Age information of customers
+  
 ¬	Gender: Gender information of customers
+  
 ¬	Day of Purchase: Day-indexed purchase information
+  
 ¬	Product Category: Product category
+  
 ¬	Indexed Turnover: Customer indexed turnover
+  
 ¬	Indexed Transaction: Transaction indexed to the customer
+  
 ¬	Price: Product prices
+  
 ¬	InvoiceNo: Helps you to count the number of time transaction performed(frequency)
+  
 ¬	InvoiceDate: Help you calculate recency of purchase
+  
 ¬	Quantity: Purchased in each transaction
+  
 ¬	UnitPrice of each unit purchased by the customer: Will help you to calculate the total purchased amount
 
-### •	Importing Required Library
+#### •	Importing Required Library
 
 ```console
 import pandas as pd
@@ -80,7 +91,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-### •	Loading Dataset
+#### •	Loading Dataset
 ```console
 df = pd.read_excel('RFM-Migros.xlsx')
 df.set_index('Customer No')
@@ -88,13 +99,13 @@ df['Day of Purchase'] = pd.to_datetime(df['Day of Purchase'])
 ```
 <img width="191" alt="Ekran Resmi 2022-11-03 22 03 20" src="https://user-images.githubusercontent.com/91700155/199811581-7791b0c2-79c1-4974-886a-e98aad6c15fc.png">
 
-### •	Filter required Columns
+#### •	Filter required Columns
 ```console
 df = pd.read_excel('RFM-Migros.xlsx')
 df.set_index('Customer No')
 df['Day of Purchase'] = pd.to_datetime(df['Day of Purchase'])
 ```
-#### 🔸 InvoiceDate
+##### 🔸 InvoiceDate
 👉🏽 Help you calculate recency of purchase
   
 🔸 InvoiceNo
@@ -122,7 +133,7 @@ present = datetime.datetime(2022, 5, 25)
 present
 ```
 
-### •	RFM Analysis
+#### •	RFM Analysis
 🔸 For Recency, Calculate the number of days between present date and date of last purchase each customer.
 🔸 For Frequency, Calculate the number of orders for each customer.
 🔸 For Monetary, Calculate sum of purchase price for each customer.
@@ -157,7 +168,7 @@ rfm.head(5)
 ```
 <img width="486" alt="Ekran Resmi 2022-11-03 21 58 26" src="https://user-images.githubusercontent.com/91700155/199814192-04ed6ef5-a268-4c4e-b209-08fad54619b8.png">
 
-### •	RFM Result Interpretation
+#### •	RFM Result Interpretation
 ##### Filter out Top/Best customers
 ```console
 rfm.sort_values('RFM_Score', ascending=False).head(15)
