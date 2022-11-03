@@ -1,9 +1,10 @@
 ## Customer Segmentation using RFM (Recency,Frequency,Monetary) Analysis with Python
 
-### In this chapter, we will work how to segment using RFM Analysis over customer data of MIGROS Market. This means that over time, we can understand which customer is truly royal and which customer is a promising customer.
+#### In this chapter, we will work how to segment using RFM Analysis over customer data of MIGROS Market. This means that over time, we can understand which customer is truly royal and which customer is a promising customer.
 
 ### What is RFM?
 #### RFM (Recency,Frequency,Monetary) analysis is a behavior-based approach by segmenting customers. It groups customers according to their previous purchases. How recently, how often, and how much a customer bought. RFM divides customers into various groups for better service. It helps managers identify potential customers to do more profitable business. For example:
+
 •	Ability to optimize every touchpoint in customers' moments to generate more revenue and active users,
 •	Which customer is really our customer,
 •	How to understand our promising customers,
