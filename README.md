@@ -52,22 +52,25 @@ It also helps managers run an effective promotional campaign for personalized se
 
 #### • Data Definition
 Introduction of tables and columns in the database
-Tables:
+  
+🔸	Tables:
 The table that we use is Migros Marketing Customer Data taken from Migros
 
--Columns:
--Customer No: Unique custom value assigned to each customer
--Age: Age information of customers
--Gender: Gender information of customers
--Day of Purchase: Day-indexed purchase information
--Product Category: Product category
--Indexed Turnover: Customer indexed turnover
--Indexed Transaction: Transaction indexed to the customer
--Price: Product prices
--InvoiceNo: Helps you to count the number of time transaction performed(frequency)
--InvoiceDate: Help you calculate recency of purchase
--Quantity: Purchased in each transaction
--UnitPrice of each unit purchased by the customer: Will help you to calculate the total purchased amount
+🔸Columns:
+  
+¬	Customer No: Unique custom value assigned to each customer
+  
+¬	Age: Age information of customers
+¬	Gender: Gender information of customers
+¬	Day of Purchase: Day-indexed purchase information
+¬	Product Category: Product category
+¬	Indexed Turnover: Customer indexed turnover
+¬	Indexed Transaction: Transaction indexed to the customer
+¬	Price: Product prices
+¬	InvoiceNo: Helps you to count the number of time transaction performed(frequency)
+¬	InvoiceDate: Help you calculate recency of purchase
+¬	Quantity: Purchased in each transaction
+¬	UnitPrice of each unit purchased by the customer: Will help you to calculate the total purchased amount
 
 ### •	Importing Required Library
 
@@ -93,10 +96,13 @@ df['Day of Purchase'] = pd.to_datetime(df['Day of Purchase'])
 ```
 #### 🔸 InvoiceDate
 👉🏽 Help you calculate recency of purchase
+  
 🔸 InvoiceNo
 👉🏽 Helps you to count the number of time transaction performed(frequency)
+  
 🔸 Quantity
 👉🏽 Purchased in each transaction
+  
 🔸 UnitPrice of each unit purchased by the customer
 👉🏽 Will help you to calculate the total purchased amount
 
