@@ -106,16 +106,16 @@ df.set_index('Customer No')
 df['Day of Purchase'] = pd.to_datetime(df['Day of Purchase'])
 ```
 ##### 🔸 InvoiceDate
-👉🏽 Help you calculate recency of purchase
+  👉🏽 Help you calculate recency of purchase
   
 🔸 InvoiceNo
-👉🏽 Helps you to count the number of time transaction performed(frequency)
+  👉🏽 Helps you to count the number of time transaction performed(frequency)
   
 🔸 Quantity
-👉🏽 Purchased in each transaction
+  👉🏽 Purchased in each transaction
   
 🔸 UnitPrice of each unit purchased by the customer
-👉🏽 Will help you to calculate the total purchased amount
+  👉🏽 Will help you to calculate the total purchased amount
 
 ```console
 df_total = df.groupby('Product Category').sum()[['Price']]
