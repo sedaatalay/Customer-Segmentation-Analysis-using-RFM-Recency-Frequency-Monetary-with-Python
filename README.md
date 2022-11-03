@@ -1,8 +1,17 @@
-## Customer Segmentation using RFM (Recency,Frequency,Monetary) Analysis with Python
+## Customer Segmentation Analysis using RFM (Recency,Frequency,Monetary) with Python
 
 #### In this chapter, we will work how to segment using RFM Analysis over customer data of MIGROS Market. This means that over time, we can understand which customer is truly royal and which customer is a promising customer.
 
-### What is RFM?
+### What is Customer Segmentation?
+#### Customer segmentation is a method of dividing customers into groups or clusters based on common characteristics. The market researcher can segment customers into the B2C model using various demographic characteristics of customers such as occupation, gender, age, location, and marital status. Psychographic features such as social class, lifestyle and personality traits, and behavioral traits such as spending, consumption habits, product/service use, and pre-purchased items. The B2B model uses various company characteristics such as company size, industry type and location.
+
+<img width="542" alt="Ekran Resmi 2022-11-03 22 41 15" src="https://user-images.githubusercontent.com/91700155/199818605-a3aa15bf-e037-43c3-a41b-6262d851d368.png">
+
+#### Types of Segmentation
+<img width="689" alt="Ekran Resmi 2022-11-03 22 41 43" src="https://user-images.githubusercontent.com/91700155/199818673-8a07fda2-ef50-4629-9440-520e340614cb.png">
+
+
+### Customer Segmentation using RFM analysis
 #### RFM (Recency,Frequency,Monetary) analysis is a behavior-based approach by segmenting customers. It groups customers according to their previous purchases. How recently, how often, and how much a customer bought. RFM divides customers into various groups for better service. It helps managers identify potential customers to do more profitable business. For example:
 
 - Ability to optimize every touchpoint in customers' moments to generate more revenue and active users,
@@ -17,9 +26,7 @@
 
 It also helps managers run an effective promotional campaign for personalized service.
 
-### What is RFM Steps?
-#### RFM Steps of RFM(Recency, Frequency, Monetary):
-¬	Calculate the Recency, Frequency, Monetary values for each customer.
+#### ¬	Calculate the Recency, Frequency, Monetary values for each customer.
 
 ¬	Add segment bin values to RFM table using quartile.
 
