@@ -6,10 +6,15 @@
 #### RFM (Recency,Frequency,Monetary) analysis is a behavior-based approach by segmenting customers. It groups customers according to their previous purchases. How recently, how often, and how much a customer bought. RFM divides customers into various groups for better service. It helps managers identify potential customers to do more profitable business. For example:
 
 •	Ability to optimize every touchpoint in customers' moments to generate more revenue and active users,
+
 •	Which customer is really our customer,
+
 •	How to understand our promising customers,
+
 •	When a campaign is going to be organized, we have the data to be used in this campaign without any noise,
+
 •	Determining the buying and selling cycle,
+
 we can say that we aim to reach a certain goal at points like above.
 It also helps managers run an effective promotional campaign for personalized service.
 
