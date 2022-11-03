@@ -179,6 +179,9 @@ rfm.sort_values('RFM_Score', ascending=False).head(15)
 
 #### 📋 When a campaign is organized, we can say that the RFM Score can reveal the type of customer on which the campaign is most effective, the customer satisfaction accordingly, and the promising customer portfolio that may occur in the future.
 
+  <p></br>
+   </p>
+
 ### Conclusion
 In this analysis we do behavior-based approach grouping customers into segments. We did groups the customers on the basis of their previous purchase transactions. 
   
@@ -192,7 +195,7 @@ Monetary Value(M): Who have high purchase amount? It means the total money custo
   
 Also the details:
   - How recently, how often, and how much did a customer buy product?
-  -A top-spending customer segment and if they only bought the products once, or how recently? 
+  - A top-spending customer segment and if they only bought the products once, or how recently? 
   - Do they often purchase our product? 
   
 As find answers to this questions with also we seen helps managers to run an effective promotional campaign for personalized service.
@@ -203,7 +206,7 @@ Also, we covered some basic concepts of such as handling duplicates, group by, b
 
 
 <p></br>
-   <p>
+   </p>
 
 
 Thanks for your time :)
