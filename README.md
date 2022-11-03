@@ -57,7 +57,7 @@ Introduction of tables and columns in the database
   
 The table that we use is Migros Marketing Customer Data taken from Migros
 
-🔸Columns:
+🔸 Columns:
   
 ¬	Customer No: Unique custom value assigned to each customer
   
@@ -181,17 +181,22 @@ rfm.sort_values('RFM_Score', ascending=False).head(15)
 
 ### Conclusion
 In this analysis we do behavior-based approach grouping customers into segments. We did groups the customers on the basis of their previous purchase transactions. 
+  
 This analysis filters customers into various groups for the purpose of better service. It helps managers to identify potential customers to do more profitable business. 
   
 Recency (R): Who have purchased recently? Number of days since last purchase (least recency)
+  
 Frequency (F): Who has purchased frequently? It means the total number of purchases. (high frequency)
+  
 Monetary Value(M): Who have high purchase amount? It means the total money customer spent (high monetary value)
+  
 Also the details:
-  -How recently, how often, and how much did a customer buy product?
+  - How recently, how often, and how much did a customer buy product?
   -A top-spending customer segment and if they only bought the products once, or how recently? 
-  -Do they often purchase our product? 
+  - Do they often purchase our product? 
   
 As find answers to this questions with also we seen helps managers to run an effective promotional campaign for personalized service.
+  
 In this project, we covered a lot of details about Customer Segmentation. We have experienced what the customer segmentation is, need of customer segmentation, types of segmentation, RFM analysis doing implementation of RFM. 
   
 Also, we covered some basic concepts of such as handling duplicates, group by, based on sample quantiles.
