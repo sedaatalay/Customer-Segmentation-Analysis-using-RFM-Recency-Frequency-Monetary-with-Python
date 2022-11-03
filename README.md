@@ -5,17 +5,15 @@
 ### What is RFM?
 #### RFM (Recency,Frequency,Monetary) analysis is a behavior-based approach by segmenting customers. It groups customers according to their previous purchases. How recently, how often, and how much a customer bought. RFM divides customers into various groups for better service. It helps managers identify potential customers to do more profitable business. For example:
 
-•	Ability to optimize every touchpoint in customers' moments to generate more revenue and active users,
+- Ability to optimize every touchpoint in customers' moments to generate more revenue and active users,
 
-•	Which customer is really our customer,
+-	Which customer is really our customer,
 
-•	How to understand our promising customers,
+-	How to understand our promising customers,
 
-•	When a campaign is going to be organized, we have the data to be used in this campaign without any noise,
+-	When a campaign is going to be organized, we have the data to be used in this campaign without any noise,
 
-•	Determining the buying and selling cycle,
-
-we can say that we aim to reach a certain goal at points like above.
+- Determining the buying and selling cycle, we can say that we aim to reach a certain goal at points like above.
 
 It also helps managers run an effective promotional campaign for personalized service.
 
@@ -52,26 +50,26 @@ It also helps managers run an effective promotional campaign for personalized se
 
 ### Identify Potential Customer Segments using RFM in Python
 
-#### Data Definition
+#### • Data Definition
 Introduction of tables and columns in the database
 Tables:
 The table that we use is Migros Marketing Customer Data taken from Migros
 
-Columns:
-Customer No: Unique custom value assigned to each customer
-Age: Age information of customers
-Gender: Gender information of customers
-Day of Purchase: Day-indexed purchase information
-Product Category: Product category
-Indexed Turnover: Customer indexed turnover
-Indexed Transaction: Transaction indexed to the customer
-Price: Product prices
-InvoiceNo: Helps you to count the number of time transaction performed(frequency)
-InvoiceDate: Help you calculate recency of purchase
-Quantity: Purchased in each transaction
-UnitPrice of each unit purchased by the customer: Will help you to calculate the total purchased amount
+-Columns:
+-Customer No: Unique custom value assigned to each customer
+-Age: Age information of customers
+-Gender: Gender information of customers
+-Day of Purchase: Day-indexed purchase information
+-Product Category: Product category
+-Indexed Turnover: Customer indexed turnover
+-Indexed Transaction: Transaction indexed to the customer
+-Price: Product prices
+-InvoiceNo: Helps you to count the number of time transaction performed(frequency)
+-InvoiceDate: Help you calculate recency of purchase
+-Quantity: Purchased in each transaction
+-UnitPrice of each unit purchased by the customer: Will help you to calculate the total purchased amount
 
-### Importing Required Library
+### •	Importing Required Library
 
 ```console
 import pandas as pd
@@ -79,7 +77,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 ```
 
-### Loading Dataset
+### •	Loading Dataset
 ```console
 df = pd.read_excel('RFM-Migros.xlsx')
 df.set_index('Customer No')
@@ -87,7 +85,7 @@ df['Day of Purchase'] = pd.to_datetime(df['Day of Purchase'])
 ```
 <img width="191" alt="Ekran Resmi 2022-11-03 22 03 20" src="https://user-images.githubusercontent.com/91700155/199811581-7791b0c2-79c1-4974-886a-e98aad6c15fc.png">
 
-### Filter required Columns
+### •	Filter required Columns
 ```console
 df = pd.read_excel('RFM-Migros.xlsx')
 df.set_index('Customer No')
@@ -118,7 +116,7 @@ present = datetime.datetime(2022, 5, 25)
 present
 ```
 
-### RFM Analysis
+### •	RFM Analysis
 🔸 For Recency, Calculate the number of days between present date and date of last purchase each customer.
 🔸 For Frequency, Calculate the number of orders for each customer.
 🔸 For Monetary, Calculate sum of purchase price for each customer.
@@ -153,7 +151,7 @@ rfm.head(5)
 ```
 <img width="486" alt="Ekran Resmi 2022-11-03 21 58 26" src="https://user-images.githubusercontent.com/91700155/199814192-04ed6ef5-a268-4c4e-b209-08fad54619b8.png">
 
-### RFM Result Interpretation
+### •	RFM Result Interpretation
 ##### Filter out Top/Best customers
 ```console
 rfm.sort_values('RFM_Score', ascending=False).head(15)
