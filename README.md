@@ -16,25 +16,28 @@
 •	Determining the buying and selling cycle,
 
 we can say that we aim to reach a certain goal at points like above.
+
 It also helps managers run an effective promotional campaign for personalized service.
 
 ### What is RFM Steps?
 #### RFM Steps of RFM(Recency, Frequency, Monetary):
 ¬	Calculate the Recency, Frequency, Monetary values for each customer.
+
 ¬	Add segment bin values to RFM table using quartile.
+
 ¬	Sort the customer RFM score in ascending order.
 
-¬	For Recency:
-Who have purchased recently? Number of days since last purchase (least recency)
-Calculate the number of days between present date and date of last purchase each customer.
+   ¬	For Recency:
+   Who have purchased recently? Number of days since last purchase (least recency)
+   Calculate the number of days between present date and date of last purchase each customer.
 
-¬	For Frequency:
-Who has purchased frequently? It means the total number of purchases. (high frequency)
-Calculate the number of orders for each customer.
+   ¬	For Frequency:
+   Who has purchased frequently? It means the total number of purchases. (high frequency)
+   Calculate the number of orders for each customer.
 
-¬	For Monetary:
-Who have high purchase amount? It means the total money customer spent (high monetary value)
-Calculate sum of purchase price for each customer.
+   ¬	For Monetary:
+   Who have high purchase amount? It means the total money customer spent (high monetary value)
+   Calculate sum of purchase price for each customer.
 
 ##### 1. Calculate the Recency, Frequency, Monetary values for each customer.
 <img width="241" alt="Ekran Resmi 2022-11-03 21 58 08" src="https://user-images.githubusercontent.com/91700155/199810652-0ac4cc34-ae33-4831-a5d2-4207a84c6235.png">
