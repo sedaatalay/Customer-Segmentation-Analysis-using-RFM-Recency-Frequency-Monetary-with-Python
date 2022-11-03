@@ -27,15 +27,15 @@ It also helps managers run an effective promotional campaign for personalized se
 
 ¬	Sort the customer RFM score in ascending order.
 
-   ¬	For Recency:
+  - For Recency:
    Who have purchased recently? Number of days since last purchase (least recency)
    Calculate the number of days between present date and date of last purchase each customer.
 
-   ¬	For Frequency:
+  - For Frequency:
    Who has purchased frequently? It means the total number of purchases. (high frequency)
    Calculate the number of orders for each customer.
 
-   ¬	For Monetary:
+  - For Monetary:
    Who have high purchase amount? It means the total money customer spent (high monetary value)
    Calculate sum of purchase price for each customer.
 
