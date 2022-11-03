@@ -106,16 +106,16 @@ df.set_index('Customer No')
 df['Day of Purchase'] = pd.to_datetime(df['Day of Purchase'])
 ```
 ##### 🔸 InvoiceDate
-  👉🏽 Help you calculate recency of purchase
+  - 👉🏽 Help you calculate recency of purchase
   
 🔸 InvoiceNo
-  👉🏽 Helps you to count the number of time transaction performed(frequency)
+  - 👉🏽 Helps you to count the number of time transaction performed(frequency)
   
 🔸 Quantity
-  👉🏽 Purchased in each transaction
+  - 👉🏽 Purchased in each transaction
   
 🔸 UnitPrice of each unit purchased by the customer
-  👉🏽 Will help you to calculate the total purchased amount
+  - 👉🏽 Will help you to calculate the total purchased amount
 
 ```console
 df_total = df.groupby('Product Category').sum()[['Price']]
@@ -135,7 +135,9 @@ present
 
 #### •	RFM Analysis
 🔸 For Recency, Calculate the number of days between present date and date of last purchase each customer.
+  
 🔸 For Frequency, Calculate the number of orders for each customer.
+  
 🔸 For Monetary, Calculate sum of purchase price for each customer.
 
 ```console
@@ -179,16 +181,19 @@ rfm.sort_values('RFM_Score', ascending=False).head(15)
 
 ### Conclusion
 In this analysis we do behavior-based approach grouping customers into segments. We did groups the customers on the basis of their previous purchase transactions. 
-This analysis filters customers into various groups for the purpose of better service. It helps managers to identify potential customers to do more profitable business.  
+This analysis filters customers into various groups for the purpose of better service. It helps managers to identify potential customers to do more profitable business. 
+  
 Recency (R): Who have purchased recently? Number of days since last purchase (least recency)
 Frequency (F): Who has purchased frequently? It means the total number of purchases. (high frequency)
 Monetary Value(M): Who have high purchase amount? It means the total money customer spent (high monetary value)
 Also the details:
--How recently, how often, and how much did a customer buy product?
--A top-spending customer segment and if they only bought the products once, or how recently? 
--Do they often purchase our product? 
+  -How recently, how often, and how much did a customer buy product?
+  -A top-spending customer segment and if they only bought the products once, or how recently? 
+  -Do they often purchase our product? 
+  
 As find answers to this questions with also we seen helps managers to run an effective promotional campaign for personalized service.
 In this project, we covered a lot of details about Customer Segmentation. We have experienced what the customer segmentation is, need of customer segmentation, types of segmentation, RFM analysis doing implementation of RFM. 
+  
 Also, we covered some basic concepts of such as handling duplicates, group by, based on sample quantiles.
 
 
